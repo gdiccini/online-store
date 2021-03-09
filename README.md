@@ -25,7 +25,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Grupos de prioridade](#grupos-de-prioridade)
   - [Requisitos Bônus](#requisitos-bônus)
-  - [Lista de requisitos](#lista-de-requisitos)
+  - [Lista de requisitos](#lista-de-requisitos) n
 
     `Requisitos Obrigatórios`
     - [1. Implemente o módulo de acesso à api do Mercado Livre](#1-implemente-o-módulo-de-acesso-à-api-do-mercado-livre)
