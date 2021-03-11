@@ -1,14 +1,17 @@
-import React from 'react';
-import * as api from './services/api';
+import React, { useState } from 'react';
 import Search from './services/Search';
 import List from './services/List';
+import ListCategories from './pages/ListCategories';
+import ListProducts from './pages/ListProducts';
 
 function App() {
-  api.getCategories().then((categories) => console.log(categories));
+  const [products, setProducts] = useState([]);
   return (
     <div className="App">
-      <Search />
+      <Search setProducts={ setProducts } />
       <List />
+      <ListCategories />
+      <ListProducts products={ products } />
     </div>
   );
 }
