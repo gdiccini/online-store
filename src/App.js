@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Search />
       <List />
-      <ListCategories/>
+      <ListCategories />
     </div>
   );
 }
