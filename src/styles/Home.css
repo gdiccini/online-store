@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  padding: 30px 20px
+}
+
+main section.categories {
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.categoriesBtn {
+  display:block;
+}
+
+.products {
+  margin-left: 20px;
+  width: 75%;
+  text-align: center;
+}
+
+.products img {
+  width: 40px;
+  margin-left: 40px;
+}
+
+.products .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  height: 25px;
+  border-radius: 5px;
+  width: 50%;
+}

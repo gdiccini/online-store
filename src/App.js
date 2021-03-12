@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
-import Search from './services/Search';
-import List from './services/List';
-import ListCategories from './pages/ListCategories';
-import ListProducts from './pages/ListProducts';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
-  const [products, setProducts] = useState([]);
   return (
     <div className="App">
-      <Search setProducts={ setProducts } />
-      <List />
-      <ListCategories />
-      <ListProducts products={ products } />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={ Home } />
+          <Route path="/productdetails" component={ ProductDetails } />
+          <Route path="/cart" component={ Cart } />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
